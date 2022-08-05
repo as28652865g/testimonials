@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #EDF2F8;
+}
+.container .wrap {
+  width: 1440px;
+}
+.container .wrap .item-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+.container .wrap .item-grid .item1, .container .wrap .item-grid .item2, .container .wrap .item-grid .item3, .container .wrap .item-grid .item4, .container .wrap .item-grid .item5 {
+  background-color: #733FC8;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+.container .wrap .item-grid .item1 .item-header, .container .wrap .item-grid .item2 .item-header, .container .wrap .item-grid .item3 .item-header, .container .wrap .item-grid .item4 .item-header, .container .wrap .item-grid .item5 .item-header {
+  display: flex;
+  align-items: center;
+}
+.container .wrap .item-grid .item1 .item-header .user-icon, .container .wrap .item-grid .item2 .item-header .user-icon, .container .wrap .item-grid .item3 .item-header .user-icon, .container .wrap .item-grid .item4 .item-header .user-icon, .container .wrap .item-grid .item5 .item-header .user-icon {
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+.container .wrap .item-grid .item1 .item-header .user-icon img, .container .wrap .item-grid .item2 .item-header .user-icon img, .container .wrap .item-grid .item3 .item-header .user-icon img, .container .wrap .item-grid .item4 .item-header .user-icon img, .container .wrap .item-grid .item5 .item-header .user-icon img {
+  border-radius: 50%;
+  border: 1.5px solid #fff;
+}
+.container .wrap .item-grid .item1 .item-header .user-description p, .container .wrap .item-grid .item2 .item-header .user-description p, .container .wrap .item-grid .item3 .item-header .user-description p, .container .wrap .item-grid .item4 .item-header .user-description p, .container .wrap .item-grid .item5 .item-header .user-description p {
+  color: #fff;
+}
+.container .wrap .item-grid .item1 .item-header .user-description span, .container .wrap .item-grid .item2 .item-header .user-description span, .container .wrap .item-grid .item3 .item-header .user-description span, .container .wrap .item-grid .item4 .item-header .user-description span, .container .wrap .item-grid .item5 .item-header .user-description span {
+  color: #777;
+}
+.container .wrap .item-grid .item1 .item-content p, .container .wrap .item-grid .item2 .item-content p, .container .wrap .item-grid .item3 .item-content p, .container .wrap .item-grid .item4 .item-content p, .container .wrap .item-grid .item5 .item-content p {
+  font-size: 1.2rem;
+  color: #fff;
+  padding-bottom: 1rem;
+}
+.container .wrap .item-grid .item1 .item-content span, .container .wrap .item-grid .item2 .item-content span, .container .wrap .item-grid .item3 .item-content span, .container .wrap .item-grid .item4 .item-content span, .container .wrap .item-grid .item5 .item-content span {
+  color: #777;
+}
+.container .wrap .item-grid .item1 {
+  grid-column: 1/3;
+}
+.container .wrap .item-grid .item2 {
+  background-color: #49556B;
+}
+.container .wrap .item-grid .item3 {
+  background-color: #FFFFFF;
+  grid-column: 4/5;
+  grid-row: 1/3;
+}
+.container .wrap .item-grid .item3 .item-content p {
+  color: #18202D;
+}
+.container .wrap .item-grid .item3 .item-content span {
+  color: #777;
+}
+.container .wrap .item-grid .item4 {
+  background-color: #FFFFFF;
+}
+.container .wrap .item-grid .item4 .item-content p {
+  color: #18202D;
+}
+.container .wrap .item-grid .item4 .item-content span {
+  color: #777;
+}
+.container .wrap .item-grid .item5 {
+  background-color: #18202D;
+  grid-column: 2/4;
+}/*# sourceMappingURL=style.css.map */
