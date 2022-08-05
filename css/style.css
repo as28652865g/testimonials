@@ -7,15 +7,15 @@
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
   background-color: #EDF2F8;
 }
 .container .wrap {
-  width: 100%;
+  max-width: 1400px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   padding: 1rem;
 }
 .container .wrap .item-grid {
@@ -24,37 +24,41 @@
   gap: 1rem;
 }
 .container .wrap .item-grid .item1, .container .wrap .item-grid .item2, .container .wrap .item-grid .item3, .container .wrap .item-grid .item4, .container .wrap .item-grid .item5 {
-  background-color: #733FC8;
   padding: 1rem;
   border-radius: 10px;
+}
+.container .wrap .item-grid .item1:hover, .container .wrap .item-grid .item2:hover, .container .wrap .item-grid .item3:hover, .container .wrap .item-grid .item4:hover, .container .wrap .item-grid .item5:hover {
+  box-shadow: 1px 1px 20px #000;
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 .container .wrap .item-grid .item1 .item-header, .container .wrap .item-grid .item2 .item-header, .container .wrap .item-grid .item3 .item-header, .container .wrap .item-grid .item4 .item-header, .container .wrap .item-grid .item5 .item-header {
   display: flex;
   align-items: center;
 }
-.container .wrap .item-grid .item1 .item-header .user-icon, .container .wrap .item-grid .item2 .item-header .user-icon, .container .wrap .item-grid .item3 .item-header .user-icon, .container .wrap .item-grid .item4 .item-header .user-icon, .container .wrap .item-grid .item5 .item-header .user-icon {
-  padding-right: 1rem;
-  padding-bottom: 1rem;
-}
 .container .wrap .item-grid .item1 .item-header .user-icon img, .container .wrap .item-grid .item2 .item-header .user-icon img, .container .wrap .item-grid .item3 .item-header .user-icon img, .container .wrap .item-grid .item4 .item-header .user-icon img, .container .wrap .item-grid .item5 .item-header .user-icon img {
+  border: 2px solid #fff;
   border-radius: 50%;
-  border: 1.5px solid #fff;
+}
+.container .wrap .item-grid .item1 .item-header .user-description, .container .wrap .item-grid .item2 .item-header .user-description, .container .wrap .item-grid .item3 .item-header .user-description, .container .wrap .item-grid .item4 .item-header .user-description, .container .wrap .item-grid .item5 .item-header .user-description {
+  padding-left: 1rem;
 }
 .container .wrap .item-grid .item1 .item-header .user-description p, .container .wrap .item-grid .item2 .item-header .user-description p, .container .wrap .item-grid .item3 .item-header .user-description p, .container .wrap .item-grid .item4 .item-header .user-description p, .container .wrap .item-grid .item5 .item-header .user-description p {
   color: #fff;
 }
 .container .wrap .item-grid .item1 .item-header .user-description span, .container .wrap .item-grid .item2 .item-header .user-description span, .container .wrap .item-grid .item3 .item-header .user-description span, .container .wrap .item-grid .item4 .item-header .user-description span, .container .wrap .item-grid .item5 .item-header .user-description span {
-  color: #777;
+  color: rgba(191, 191, 191, 0.777);
 }
 .container .wrap .item-grid .item1 .item-content p, .container .wrap .item-grid .item2 .item-content p, .container .wrap .item-grid .item3 .item-content p, .container .wrap .item-grid .item4 .item-content p, .container .wrap .item-grid .item5 .item-content p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #fff;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 .container .wrap .item-grid .item1 .item-content span, .container .wrap .item-grid .item2 .item-content span, .container .wrap .item-grid .item3 .item-content span, .container .wrap .item-grid .item4 .item-content span, .container .wrap .item-grid .item5 .item-content span {
-  color: #777;
+  color: rgba(191, 191, 191, 0.777);
 }
 .container .wrap .item-grid .item1 {
+  background-color: #733FC8;
   grid-column: 1/3;
 }
 .container .wrap .item-grid .item2 {
@@ -69,13 +73,13 @@
   color: #18202D;
 }
 .container .wrap .item-grid .item3 .item-header .user-description span {
-  color: #777;
+  color: rgba(191, 191, 191, 0.777);
 }
 .container .wrap .item-grid .item3 .item-content p {
   color: #18202D;
 }
 .container .wrap .item-grid .item3 .item-content span {
-  color: #777;
+  color: rgba(191, 191, 191, 0.777);
 }
 .container .wrap .item-grid .item4 {
   background-color: #FFFFFF;
@@ -84,29 +88,32 @@
   color: #18202D;
 }
 .container .wrap .item-grid .item4 .item-header .user-description span {
-  color: #777;
+  color: rgba(191, 191, 191, 0.777);
 }
 .container .wrap .item-grid .item4 .item-content p {
   color: #18202D;
 }
 .container .wrap .item-grid .item4 .item-content span {
-  color: #777;
+  color: rgba(191, 191, 191, 0.777);
 }
 .container .wrap .item-grid .item5 {
   background-color: #18202D;
   grid-column: 2/4;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 900px) {
   .container {
-    height: 100%;
+    align-items: start;
   }
   .container .wrap {
+    height: 100%;
     padding: 1rem;
-    height: auto;
   }
   .container .wrap .item-grid {
     display: flex;
     flex-direction: column;
+  }
+  .container .wrap .item-grid .item1:hover, .container .wrap .item-grid .item2:hover, .container .wrap .item-grid .item3:hover, .container .wrap .item-grid .item4:hover, .container .wrap .item-grid .item5:hover {
+    transform: none;
   }
 }/*# sourceMappingURL=style.css.map */
